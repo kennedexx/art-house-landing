@@ -15,7 +15,7 @@ export async function POST(request: NextRequest) {
 
     // Email para a Art House
     const emailToArtHouse = await resend.emails.send({
-      from: "contato@arthouse.com",
+      from: "contato@arthousepapeldeparede.com.br",
       to: ["arthouse751@hotmail.com"],
       subject: `🎯 Novo Lead - Festival do Papel: ${nome}`,
       html: `
@@ -72,7 +72,7 @@ export async function POST(request: NextRequest) {
 
     // Email de confirmação para o cliente
     const emailToClient = await resend.emails.send({
-      from: "contato@arthouse.com",
+      from: "contato@arthousepapeldeparede.com.br",
       to: [email],
       subject: "🎉 Obrigado pelo seu interesse! Seu desconto de 5% está garantido - Art House",
       html: `
