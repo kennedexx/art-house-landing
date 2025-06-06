@@ -1,11 +1,9 @@
+"use client"
 const handleWhatsappClick = () => {
   if (typeof window !== "undefined" && typeof window.fbq !== "undefined") {
     window.fbq("trackCustom", "Whatsapp Click");
   }
 };
-
-"use client"
-
 import type React from "react"
 import { useEffect, useState } from "react"
 import Image from "next/image"
