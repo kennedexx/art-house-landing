@@ -1,3 +1,9 @@
+const handleWhatsappClick = () => {
+  if (typeof window !== "undefined" && typeof window.fbq !== "undefined") {
+    window.fbq("trackCustom", "Whatsapp Click");
+  }
+};
+
 "use client"
 
 import type React from "react"
@@ -162,6 +168,7 @@ export default function ArtHouseLanding() {
             <a
               href="https://wa.me/5561986792057"
               target="_blank"
+onClick={handleWhatsappClick}
               className="bg-gradient-to-r from-[#1B5E3A] to-[#2d7a4f] text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105"
               rel="noreferrer"
             >
@@ -217,6 +224,7 @@ export default function ArtHouseLanding() {
               <a
                 href="https://wa.me/5561986792057"
                 target="_blank"
+onClick={handleWhatsappClick}
                 className="group bg-gradient-to-r from-[#1B5E3A] to-[#2d7a4f] text-white px-10 py-5 rounded-2xl font-montserrat font-semibold text-lg inline-flex items-center gap-3 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 relative overflow-hidden"
                 rel="noreferrer"
               >
@@ -853,6 +861,7 @@ export default function ArtHouseLanding() {
       <a
         href="https://wa.me/5561986792057"
         target="_blank"
+onClick={handleWhatsappClick}
         className="fixed bottom-6 right-6 z-50 bg-gradient-to-r from-green-500 to-green-600 text-white p-5 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-110 animate-pulse-slow group"
         rel="noreferrer"
       >
@@ -875,6 +884,7 @@ export default function ArtHouseLanding() {
             <a
               href="https://wa.me/5561986792057"
               target="_blank"
+onClick={handleWhatsappClick}
               className="flex-1 bg-gradient-to-r from-green-500 to-green-600 text-white py-4 px-4 rounded-xl font-semibold text-center hover:shadow-lg transition-all duration-300 transform active:scale-95"
               rel="noreferrer"
             >
